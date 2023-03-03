@@ -1,0 +1,155 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Hanken Grotesk', sans-serif; 
+    ;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 25px;
+
+}
+.left{
+    width: 300px;
+    height: 450px;
+    background: rgb(103,67,255);
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    z-index: 99;
+}
+
+.heading{
+    color: rgba(190,190,255,255);
+
+}
+.heading::after{
+    position: absolute;
+    z-index: -1;
+    display: inline-block;
+    content: "";
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: hsla(256, 72%, 46%, 1);
+    position: absolute;
+    left: 80px;
+    top: 78px;
+}
+.result h1{
+    font-size: 70px;
+    margin-top: 55px;
+    margin-bottom: -15px;
+    color: white;
+}
+.result p{
+    color: rgba(190,190,255,255);
+}
+.remarks{
+    margin: 80px 30px;
+}
+.remarks h2{
+    color: white;
+}
+.remarks p{
+    font-size: 18px;
+    color: rgba(190,190,255,255);
+}
+
+/* right side */
+.right{
+    width: 300px;
+    height: 450px;
+
+    border-radius: 25px;
+
+    padding: 20px;
+}
+.sum-grid{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    gap: 15px;
+}
+.sum-react{
+    width: 250px;
+    height: 50px;
+    background-color: #fff6f5;
+    padding: 0px 20px;
+    border-radius: 10px;
+    
+
+}
+.tab-flex{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.type-flex{
+    display: flex;
+    gap: 10px;
+}
+.reaction{
+    color: hsl(0, 100%, 67%);
+}
+.memory{
+    color:hsl(39, 100%, 56%);
+}
+.verbal{
+color: hsl(166, 100%, 37%) ;
+}
+.visual{
+color: hsl(234, 85%, 45%);
+}
+#reaction{
+background-color: #fff6f5;
+}
+#memory{
+background-color: #fffbf2;
+}
+#verbal{
+background-color: #f2fbfa;
+}
+#visual{
+background-color: #f3f3fd;
+}
+
+.total{
+    color: grey;
+}
+.continue-btn{
+
+    border: none;
+    background-color: #303b59;
+    width: 100%;
+    height: 50px;
+    color: white;
+    font-size: 18px;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 25px;
+
+}
+
+/* mobile design */
+
+@media only screen and (max-width: 768px){
+    .container-grid{
+        display: block;
+        margin-top: 200px;
+    }
+}
